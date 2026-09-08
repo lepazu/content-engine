@@ -1,11 +1,10 @@
 import { getVercelOidcToken } from '@vercel/oidc';
 
 const GATEWAY_URL = 'https://italgelybcvmytyubveh.supabase.co/functions/v1/content-engine-gateway';
-const OIDC_AUDIENCE = 'https://vercel.com/toroleevi-5264';
 
 export default async function handler(req, res) {
   try {
-    const token = await getVercelOidcToken({ audience: OIDC_AUDIENCE });
+    const token = await getVercelOidcToken();
 
     if (!token) {
       return res.status(500).json({
