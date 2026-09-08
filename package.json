@@ -1,0 +1,12 @@
+{
+  "name": "content-engine",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@vercel/oidc": "^3.0.5"
+  }
+}
